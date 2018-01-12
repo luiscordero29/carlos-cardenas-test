@@ -1,0 +1,41 @@
+* {
+  font-family: "Proxima Nova";
+}
+ul li {
+  list-style: none;
+}
+.float-r {
+  display: inline-block;
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#save_search {
+  margin-left: 2%;
+}
+content {
+  padding-left: 0%;
+}
+content .item-result {
+  margin: 0 1.8%;
+}
+content .item-result .img {
+  background: #eee;
+  width: 120px;
+  height: 120px;
+}
+content .item-result h3 {
+  margin-top: 20%;
+}
+.search-form {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 650px) {
+  .search-form {
+    display: none;
+  }
+}
+.awesomplete {
+  display: inline-block;
+}

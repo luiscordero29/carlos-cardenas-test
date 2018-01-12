@@ -1,0 +1,120 @@
+doctype html
+html(lang="es")
+    head
+        title Finder challenge
+        meta(charset="utf-8")
+        meta(viewport="width=device-width, initial-scale=1.0")
+        link(href="https://fonts.googleapis.com/css?family=Proxima+Nova", rel="stylesheet", type="text/css")
+        link(href="/vendor/pure/pure-min.css", rel="stylesheet")
+        link(href="/styles/index.css", rel="stylesheet")
+        link(href="/styles/awesomplete.css")
+
+    body
+        .app.pure-g
+            header.pure-u-1
+                .pure-u-1-3
+                    h1.logo Finder challenge!
+                .pure-u-1-2
+                    include blocks/search-form
+            aside.filters.pure-u-1-4
+                .item
+                    h3 Busquedas Guardadas
+                    .enlaces
+                        ul
+                            li
+                                a(href="#") Terror Puro
+                            li
+                                a(href="#") Editar | Eliminar
+                            li
+                                a(href="#") search Drama
+
+                .item
+                    h3 Categorias
+                    .enlaces
+                        ul#categorias
+                            li
+                                a(href="#") Todos
+                            li
+                                a(href="#") Terror
+                            li
+                                a(href="#") Comedia
+                            li
+                                a(href="#") Drama
+
+                .item
+                    h3 Idiomas
+                    .enlaces
+                        ul
+                            li
+                                a(href="#") Todos
+                            li
+                                a(href="#") Ingles
+                            li
+                                a(href="#") Español
+                            li
+                                a(href="#") Portugues
+                
+                .item
+                    h3 Publicacion
+                    .enlaces
+                        ul
+                            li
+                                a(href="#") Todos
+                            li
+                                a(href="#") Hoy
+                            li
+                                a(href="#") Hace una semana
+                            li
+                                a(href="#") Hace un mes
+                            li
+                                a(href="#") Hace un año
+
+                .item
+                    h3 Presentacion
+                    .enlaces
+                        ul
+                            li
+                                a(href="#") Impreso
+                            li
+                                a(href="#") Digital
+                            li
+                                a(href="#") Impreso y digital
+
+                        
+            content.pure-u-3-4#articles
+                //- .item-result.pure-u-7-24
+                //-     .img
+                //-     h3 titulo libro
+                //-     p lorem lorem lorem loremlorem loremloremloremv lorem lorem
+                //- .item-result.pure-u-7-24
+                //-     .img
+                //-     h3 titulo libro
+                //-     p lorem lorem lorem loremlorem loremloremloremv lorem lorem
+                //- .item-result.pure-u-7-24
+                //-     .img
+                //-     h3 titulo libro
+                //-     p lorem lorem lorem loremlorem loremloremloremv lorem lorem
+                //- .item-result.pure-u-7-24
+                //-     .img
+                //-     h3 titulo libro
+                //-     p lorem lorem lorem loremlorem loremloremloremv lorem lorem
+                //- .item-result.pure-u-7-24
+                //-     .img
+                //-     h3 titulo libro
+                //-     p lorem lorem lorem loremlorem loremloremloremv lorem lorem
+                //- .item-result.pure-u-7-24
+                //-     .img
+                //-     h3 titulo libro
+                //-     p lorem lorem lorem loremlorem loremloremloremv lorem lorem
+
+            footer.pure-u-1
+        script(src='http://code.jquery.com/jquery-1.7.2.min.js')
+
+        //- third party libraries
+        script(src="/vendor/underscore/underscore-min.js")
+
+        //- app scripts self
+        script(src="/scripts/global.js")
+        script(src="/scripts/search-form.js")
+        script(src="/scripts/awesomplete.js")
+        script(src="/scripts/app.js")
